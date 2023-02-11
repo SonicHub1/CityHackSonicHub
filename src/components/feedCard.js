@@ -1,8 +1,15 @@
-const eedCard = () => {
+import imageUrl from '../assets/guitar_performance.jpg'
+const FeedCard = (props) => {
   return (
-    <>
-      <h1>feedCard</h1>
-    </>
+    <div class="card">
+      <div className="container">
+        <img className='feedCardImage' src={imageUrl} />
+        <h4>
+          <b>John Doe</b>
+        </h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
   );
 };
 

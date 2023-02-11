@@ -1,4 +1,10 @@
 import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SideBar from "./components/SideBar";
+import FeedScreen from "./screens/FeedScreen";
+import MapScreen from "./screens/MapScreen";
+import Profile from "./screens/Profile";
+import './styles/App.css'
 import { Container } from "react-bootstrap";
 import Login from "./components/Login";
 
@@ -6,13 +12,19 @@ import Login from "./components/Login";
 
 const App = () => {
   return (
-    <Container className="d-flex align-items-center justify-content-center"
-    style={{minHeight: "100vh"}}>
-      <div className="w-100" style={{maxWidth: "400px"}}>
-        <Login/>
-      </div>
-    </Container>
-  )
+    <>
+      <BrowserRouter>
+        <SideBar>
+          <Routes>
+            <Route path="/feed" element={<FeedScreen />} />
+            <Route path="/mapscreen" element={<MapScreen />} />
+            <Route path="/profile" element={<Profile />} />
+          
+          </Routes>
+        </SideBar>
+      </BrowserRouter>
+    </>
+  );
 };
 
 export default App;
