@@ -8,7 +8,7 @@ import './styles/App.css'
 import { Container } from "react-bootstrap";
 import Login from "./components/Login";
 
-
+  
 
 const App = () => {
   return (
@@ -16,10 +16,10 @@ const App = () => {
       <BrowserRouter>
         <SideBar>
           <Routes>
+            <Route path="/" element = {<Login/>}/>
             <Route path="/feed" element={<FeedScreen />} />
             <Route path="/mapscreen" element={<MapScreen />} />
             <Route path="/profile" element={<Profile />} />
-          
           </Routes>
         </SideBar>
       </BrowserRouter>

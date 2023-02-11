@@ -1,4 +1,5 @@
 import imageUrl from '../assets/guitar_performance.jpg'
+
 const FeedCard = (props) => {
   return (
     <div class="card">
