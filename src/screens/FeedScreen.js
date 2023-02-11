@@ -1,20 +1,52 @@
 import React from "react";
 import FeedCard from "../components/FeedCard";
-
+import { Container, Row, Col } from "react-bootstrap";
 
 const FeedScreen = () => {
   const FeedData = [
     {
-      name:'Aryaman',
-      time:'2h ago',
-      imageUrl: '../assets/guitar_performance.jpg'
-    }
-  ]
+      name: "Aryaman",
+      time: "2h ago",
+      imageUrl: "../assets/guitar_performance.jpg",
+    },
+  ];
   return (
-    <>
-      <h1>feed</h1>
-      <FeedCard ></FeedCard>
-    </>
+      <Container fluid>
+        <Row>
+          <Col>
+            <FeedCard className="col" ></FeedCard>
+          </Col>
+          <Col>
+            <FeedCard className="col"></FeedCard>
+          </Col>
+          <Col>
+            <FeedCard className="col"></FeedCard>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <FeedCard className="col "></FeedCard>
+          </Col>
+          <Col>
+            <FeedCard className="col"></FeedCard>
+          </Col>
+          <Col>
+            <FeedCard className="col"></FeedCard>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <FeedCard className="col "></FeedCard>
+          </Col>
+          <Col>
+            <FeedCard className="col"></FeedCard>
+          </Col>
+          <Col>
+            <FeedCard className="col"></FeedCard>
+          </Col>
+        </Row>
+      </Container>
   );
 };
 
