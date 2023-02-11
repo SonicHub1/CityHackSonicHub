@@ -1,25 +1,7 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import SideBar from "./components/SideBar";
 
 
-const SideBar = () => {
-  return (
-    <>
-      <Button>Home</Button>
-      <Button>Search</Button>
-      <Button>Chat</Button>
-      <Button>Profile</Button>
-    </>
-  );
-};
-
-const MainPage = () => {
-  return (
-    <>
-      <h1>Main page goes here</h1>
-    </>
-  );
-};
 
 const App = () => {
   return (
