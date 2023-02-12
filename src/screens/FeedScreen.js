@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import FeedCard from "../components/FeedCard";
 import { Container, Row, Col } from "react-bootstrap";
+import '../styles/FeedScreen.css'
+import axios from 'axios';
 
 const FeedScreen = () => {
-  const FeedData = [
-    {
-      name: "Aryaman",
-      time: "2h ago",
-      imageUrl: "../assets/guitar_performance.jpg",
-    },
-  ];
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    axios.get("URL NEEDED").then((response) => {
+      setData(response.data)
+    });
+  }, [])
+
+  // const FeedData = [
+  //   {
+  //     name: "Aryaman",
+  //     time: "2h ago",
+  //     imageUrl: "../assets/guitar_performance.jpg",
+  //   },
+  // ];
+
+  
+
   return (
-      <Container fluid>
+      <Container fluid className="feed-box">
         <Row>
           <h1>Feed</h1>
         </Row>
@@ -25,9 +38,9 @@ const FeedScreen = () => {
           <Col>
             <FeedCard className="col"></FeedCard>
           </Col>
-        </Row>
+        {/* </Row>
 
-        <Row>
+        <Row> */}
           <Col>
             <FeedCard className="col "></FeedCard>
           </Col>
@@ -37,8 +50,8 @@ const FeedScreen = () => {
           <Col>
             <FeedCard className="col"></FeedCard>
           </Col>
-        </Row>
-        <Row>
+        {/* </Row>
+        <Row> */}
           <Col>
             <FeedCard className="col "></FeedCard>
           </Col>
