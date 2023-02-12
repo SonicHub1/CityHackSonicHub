@@ -5,23 +5,6 @@ import '../styles/FeedScreen.css'
 import axios from 'axios';
 
 const FeedScreen = () => {
-  const [data, setData] = useState(null)
-
-  useEffect(() => {
-    axios.get("URL NEEDED").then((response) => {
-      setData(response.data)
-    });
-  }, [])
-
-  // const FeedData = [
-  //   {
-  //     name: "Aryaman",
-  //     time: "2h ago",
-  //     imageUrl: "../assets/guitar_performance.jpg",
-  //   },
-  // ];
-
-  
 
   return (
       <Container fluid className="feed-box">
@@ -30,7 +13,7 @@ const FeedScreen = () => {
         </Row>
         <Row>
           <Col>
-            <FeedCard className="col" ></FeedCard>
+            <FeedCard className="col" name="Aryan Kasliwal" time = "2:10pm" imagePath = "https://i.pinimg.com/564x/c3/89/18/c3891830f480d90da165aea310f42c81.jpg"></FeedCard>
           </Col>
           <Col>
             <FeedCard className="col"></FeedCard>
