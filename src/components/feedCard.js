@@ -15,7 +15,7 @@ function FeedCard() {
         <Card.Link href="#">Another Link</Card.Link>
       </Card.Body>
     </Card>
-  );
+  ); 
 }
 
 export default FeedCard;

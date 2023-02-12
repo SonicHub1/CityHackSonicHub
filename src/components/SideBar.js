@@ -1,5 +1,6 @@
 import { useState } from "react";
 import * as reactIcons from "react-icons/fa";
+import {BsFillChatLeftQuoteFill, BsSearch} from 'react-icons/bs'
 import { NavLink } from "react-router-dom";
 import "../styles/App.css";
 
@@ -22,6 +23,16 @@ function SideBar({ children }) {
       name: "Profile",
       icon: <reactIcons.FaUserAlt />,
     },
+    {
+      path: "/chat",
+      name: "Chat",
+      icon: <BsFillChatLeftQuoteFill />, 
+    },
+    {
+      path: "/search",
+      name: "Search",
+      icon: <BsSearch />, 
+    }
   ];
   return (
     <div className="container">

@@ -13,6 +13,9 @@ const FeedScreen = () => {
   return (
       <Container fluid>
         <Row>
+          <h1>Feed</h1>
+        </Row>
+        <Row>
           <Col>
             <FeedCard className="col" ></FeedCard>
           </Col>
