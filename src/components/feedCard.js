@@ -10,12 +10,11 @@ function FeedCard(props) {
   return (
     <Card className='col mb-3'style={{ width: '25rem', backgroundColor: '#1e1d1d' }}>
       <Card.Body>
-        <Card.Title style={{color: 'white'}}>Card Title</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <Card.Title style={{color: 'white'}}>{name}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">{time}</Card.Subtitle>
         <Card.Img variant="top" src= {imageUrl}/>
         <Card.Text style={{color: 'white'}}>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {text}
         </Card.Text>
         <Button variant='primary'>Message</Button>
       </Card.Body>
