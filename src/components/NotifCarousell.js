@@ -6,7 +6,7 @@ import slide3 from "../assets/guitar_performance.jpg";
 
 function NotifCarousell() {
   return (
-    <Carousel>
+    <Carousel className="mb-4">
       <Carousel.Item interval={5000}>
         <img className="d-block w-100" src={slide1} alt="First slide" />
         <Carousel.Caption>

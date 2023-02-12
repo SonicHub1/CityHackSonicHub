@@ -3,6 +3,7 @@ import FeedCard from "../components/FeedCard";
 import { Container, Row, Col } from "react-bootstrap";
 import '../styles/FeedScreen.css'
 import axios from 'axios';
+import NotifCarousell from "../components/NotifCarousell";
 
 const FeedScreen = () => {
   const [data, setData] = useState(null)
@@ -26,7 +27,7 @@ const FeedScreen = () => {
   return (
       <Container fluid className="feed-box">
         <Row>
-          <h1>Feed</h1>
+          <NotifCarousell></NotifCarousell>
         </Row>
         <Row>
           <Col>
@@ -38,20 +39,9 @@ const FeedScreen = () => {
           <Col>
             <FeedCard className="col"></FeedCard>
           </Col>
-        {/* </Row>
+        </Row>
 
-        <Row> */}
-          <Col>
-            <FeedCard className="col "></FeedCard>
-          </Col>
-          <Col>
-            <FeedCard className="col"></FeedCard>
-          </Col>
-          <Col>
-            <FeedCard className="col"></FeedCard>
-          </Col>
-        {/* </Row>
-        <Row> */}
+        <Row>
           <Col>
             <FeedCard className="col "></FeedCard>
           </Col>

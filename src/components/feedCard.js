@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import '../styles/FeedCard.css'
 function FeedCard() {
   return (
-    <Card style={{ width: '25rem', backgroundColor: '#1e1d1d' }}>
+    <Card className='col mb-3'style={{ width: '25rem', backgroundColor: '#1e1d1d' }}>
       <Card.Body>
         <Card.Title style={{color: 'white'}}>Card Title</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>

@@ -57,7 +57,7 @@ function SideBar({ children }) {
           </NavLink>
         ))}
       </div>
-      <main>{children}</main>
+      <main style={{margin: 0}}>{children}</main>
     </div>
   );
 }
